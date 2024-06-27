@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{80DD78EF-7949-46AF-93FA-2A2FD3A05068}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>beyaz_esya_stok_takip</RootNamespace>
+    <AssemblyName>beyaz_esya_stok_takip</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="baglanti.cs" />
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deneme.cs" />
+    <Compile Include="girisekrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="girisekrani.Designer.cs">
+      <DependentUpon>girisekrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iadeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iadeler.Designer.cs">
+      <DependentUpon>iadeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iade_talep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iade_talep.Designer.cs">
+      <DependentUpon>iade_talep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kategori_Marka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kategori_Marka.Designer.cs">
+      <DependentUpon>Kategori_Marka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayitekrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitekrani.Designer.cs">
+      <DependentUpon>kayitekrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menustyle.cs" />
+    <Compile Include="musteriekleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriekleme.Designer.cs">
+      <DependentUpon>musteriekleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteriler.Designer.cs">
+      <DependentUpon>Musteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Satislar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Satislar.Designer.cs">
+      <DependentUpon>Satislar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satislistele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satislistele.Designer.cs">
+      <DependentUpon>satislistele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satismusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satismusteri.Designer.cs">
+      <DependentUpon>satismusteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sepetekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sepetekle.Designer.cs">
+      <DependentUpon>sepetekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunEkle.Designer.cs">
+      <DependentUpon>UrunEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunFoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunFoto.Designer.cs">
+      <DependentUpon>UrunFoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Urunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Urunler.Designer.cs">
+      <DependentUpon>Urunler.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="girisekrani.resx">
+      <DependentUpon>girisekrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iadeler.resx">
+      <DependentUpon>iadeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iade_talep.resx">
+      <DependentUpon>iade_talep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kategori_Marka.resx">
+      <DependentUpon>Kategori_Marka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitekrani.resx">
+      <DependentUpon>kayitekrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriekleme.resx">
+      <DependentUpon>musteriekleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteriler.resx">
+      <DependentUpon>Musteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Satislar.resx">
+      <DependentUpon>Satislar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satislistele.resx">
+      <DependentUpon>satislistele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satismusteri.resx">
+      <DependentUpon>satismusteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sepetekle.resx">
+      <DependentUpon>sepetekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunEkle.resx">
+      <DependentUpon>UrunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunFoto.resx">
+      <DependentUpon>UrunFoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Urunler.resx">
+      <DependentUpon>Urunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
